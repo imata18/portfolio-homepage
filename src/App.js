@@ -14,7 +14,7 @@ function App() {
   return (
     <Container>
       <Grid container>
-        <Grid item lg={3} md={3} sm={12} xs={12}>
+        <Grid item xs={12} sm={12} md={4} lg={3}>
           <Profile />
         </Grid>
         <Grid item lg={9} md={9} sm={12} xs={12}>
