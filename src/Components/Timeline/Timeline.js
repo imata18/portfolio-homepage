@@ -23,7 +23,7 @@ function CustomTimeline({title, icon, children}) {
         </TimelineSeparator>
         <TimelineContent>
           <Typography variant='h6' className={'timeline_header'}>
-            {title}
+            {'title'}
           </Typography>
         </TimelineContent>
       </TimelineItem>
