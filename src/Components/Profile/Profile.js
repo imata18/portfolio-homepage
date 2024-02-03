@@ -1,11 +1,36 @@
 import { Typography } from "@mui/material";
 import React from 'react'
-import CustomTimeline from '../Timeline/Timeline'
+import CustomTimeline, { CustomTimelineSeparator } from '../Timeline/Timeline'
+import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined';
+import TimelineItem from '@mui/lab/TimelineItem';
+import TimelineContent from "@mui/lab/TimelineContent";
+
 
 import jobInfo from "../../Utils/jobInfo";
 
 import './Profile.css'
 
+const CustomTimelineItem = ({title, text, link}) => {
+  return (
+    <TimelineItem>
+      <CustomTimelineSeparator/>
+      <TimelineContent>
+        {link ? (
+          <Typography>
+            <span>{title}:</span>{" "}
+            <a href={link} target="_blank">
+              {text}
+            </a>
+          </Typography>
+        ): (
+          <Typography>
+            <span>{title}:</span> {text}
+          </Typography>
+        )}
+      </TimelineContent>
+    </TimelineItem>
+  )
+}
 
 const Profile = () => {
   return (
@@ -14,12 +39,17 @@ const Profile = () => {
         <Typography className="name">{jobInfo.name}</Typography>
         <Typography className="title">{jobInfo.title}</Typography>
       </div>
+
       <figure className="profile_image">
         <img src={require('../../Assets/Images/Portfolio_pic.jpg')} alt="" />
       </figure>
 
       <div className="profile_info">
-        <CustomTimeline />
+        <CustomTimeline icon={<PersonOutlineOutlinedIcon/>}>
+          <CustomTimelineItem title='Name' text={jobInfo.name}/>
+          <CustomTimelineItem title='Title' text={jobInfo.title}/>
+          <CustomTimelineItem title='Email' text={jobInfo.email}/>
+        </CustomTimeline>
         <br />
         <button>button</button>
       </div>
