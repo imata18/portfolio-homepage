@@ -13,19 +13,19 @@ export default {
     address: 'Boston, MA, USA',
 
     socials: {
-        github: {
+        Github: {
             link: 'https://github.com/imata18',
-            text: 'My Github',
+            text: 'imata18',
             icon: <GitHubIcon/>
         },
-        linkedin: {
+        Linkedin: {
             link: 'https://www.linkedin.com/in/ivan-mata-574608174/',
-            text: 'My Linkedin',
+            text: 'ivan-mata-574608174',
             icon: <LinkedInIcon/>
         },
-        instagram: {
+        Instagram: {
             link: 'https://www.instagram.com/piyoz18/',
-            text: 'My Instagram',
+            text: '@piyoz18',
             icon: <InstagramIcon/>
         }
     }

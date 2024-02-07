@@ -49,6 +49,10 @@ const Profile = () => {
           <CustomTimelineItem title='Name' text={jobInfo.name}/>
           <CustomTimelineItem title='Title' text={jobInfo.title}/>
           <CustomTimelineItem title='Email' text={jobInfo.email}/>
+
+          {Object.keys(jobInfo.socials).map(key => (
+            <CustomTimelineItem title={key} text={jobInfo.socials[key].text} link={jobInfo.socials[key].link}/>
+          ))}
         </CustomTimeline>
         <br />
         <button>button</button>
