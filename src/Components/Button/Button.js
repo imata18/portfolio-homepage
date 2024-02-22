@@ -1,6 +1,8 @@
 import React from "react";
-import { Button } from "@material-ui/core";
-const Button = () => {
+import Button from  '@mui/material/Button'
+
+import "./Button.css";
+const CustomButton = ({text, icon}) => {
   return (
     <Button
       className="custom_btn"
@@ -10,4 +12,4 @@ const Button = () => {
   );
 };
 
-export default Button;
+export default CustomButton;

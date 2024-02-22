@@ -4,6 +4,8 @@ import CustomTimeline, { CustomTimelineSeparator } from '../Timeline/Timeline'
 import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined';
 import TimelineItem from '@mui/lab/TimelineItem';
 import TimelineContent from "@mui/lab/TimelineContent";
+import CustomButton from "../Button/Button";
+import GetAppIcon from '@mui/icons-material/GetApp';
 
 
 import jobInfo from "../../Utils/jobInfo";
@@ -55,7 +57,7 @@ const Profile = () => {
           ))}
         </CustomTimeline>
         <br />
-        <button>button</button>
+        <CustomButton text={"Download Resume"}  icon={<GetAppIcon />}/>
       </div>
     </div>
   )
