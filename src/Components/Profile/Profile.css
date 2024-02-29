@@ -53,3 +53,11 @@
 .timelineItem_text > span {
     color:black;
 }
+
+.profile .button_ctner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+
+}

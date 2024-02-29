@@ -56,8 +56,10 @@ const Profile = () => {
             <CustomTimelineItem title={key} text={jobInfo.socials[key].text} link={jobInfo.socials[key].link}/>
           ))}
         </CustomTimeline>
-        <br />
-        <CustomButton text={"Download Resume"}  icon={<GetAppIcon />}/>
+
+        <div className="button_ctner">
+            <CustomButton text={"Download Resume"}  icon={<GetAppIcon />}/>
+        </div>
       </div>
     </div>
   )
