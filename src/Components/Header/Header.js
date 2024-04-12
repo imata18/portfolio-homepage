@@ -1,35 +1,25 @@
-import React from 'react'
-import Tabs from '@mui/material/Tabs';
-import Tab from '@mui/material/Tab';
+import React from 'react';
+import {
+  Button,
+  Form,
+  FormControl,
+  Nav,
+  Navbar,
+  NavDropdown,
+} from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import {Link, NavLink, withRouter } from 'react-router-dom';
+import { HomeRounded } from '@mui/icons-material';
 
 const Header = () => {
-  const [value, setValue] = React.useState('one');
-
-  const handleChange = (event, newValue) => {
-    setValue(newValue);
-  };
   return (
-    <Tabs 
-    value={value}
-        onChange={handleChange}
-      className='header'
-      //value={value}
-      //onChange={handleChange}
-      TabIndicatorProps={{
-        style: {
-          backgroundColor: "white"
-        }
-      }}
-      TabTextProps={{
-        style: {
-          color: "white"
-        }
-      }}
-      //aria-label="secondary tabs example"
-    >
-      <Tab value="one" label="Item One" />
-      <Tab value="two" label="Item Two" />
-    </Tabs>
+    <Navbar expand="lg" sticky='top' className='header'>
+      <Nav.Link as={NavLink} to='/'>
+        <Navbar.Brand className='header_home'>
+          <HomeRounded/>
+        </Navbar.Brand>
+      </Nav.Link>
+    </Navbar>
   )
 }
 

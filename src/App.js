@@ -17,9 +17,9 @@ function App() {
         <Grid item xs={12} sm={12} md={4} lg={3}>
           <Profile />
         </Grid>
-        <Grid item lg={9} md={9} sm={12} xs={12}>
+        <Grid item xs>
+        <Router>
           <Header />
-          <Router>
             <Routes>
               <Route path="/portfolio" element={<Portfolio />}></Route>
               <Route path="/" element={<Resume />}></Route>
