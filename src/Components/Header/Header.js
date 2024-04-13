@@ -9,9 +9,13 @@ import {
 } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Link, NavLink, withRouter } from 'react-router-dom';
-import { HomeRounded } from '@mui/icons-material';
+import { HomeRounded, Telegram } from '@mui/icons-material';
+import jobInfo from '../../Utils/jobInfo';
+import CustomButton from '../Button/Button';
 
-const Header = () => {
+const Header = (props) => {
+  const pathName = props?.location?.pathname;
+
   return (
     <Navbar expand="lg" sticky='top' className='header'>
       <Nav.Link as={NavLink} to='/'>
@@ -19,6 +23,27 @@ const Header = () => {
           <HomeRounded/>
         </Navbar.Brand>
       </Nav.Link>
+      <Navbar.Toggle />
+      <Navbar.Collapse> 
+        <Nav>
+          <Nav.Link as={NavLink} to='/' className={pathName == '/' ? 'header_link_active' : 'header_link'}>
+            Resume
+          </Nav.Link>
+
+          <Nav.Link as={NavLink} to='/portfolio' className={pathName == '/portfolio' ? 'header_link_active' : 'header_link'}>
+            Portfolio
+          </Nav.Link>
+        </Nav>
+
+        <div clasName="header_right">
+          {Object.keys(jobInfo.socials).map(key => (
+            <a href={jobInfo.socials[key].link} target="_blank">
+              {jobInfo.socials[key].icon}
+            </a>
+          ))}
+          <CustomButton text={'Contact Me'} icon={<Telegram />} />
+        </div>
+      </Navbar.Collapse>
     </Navbar>
   )
 }
