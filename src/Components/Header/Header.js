@@ -12,6 +12,7 @@ import {Link, NavLink, withRouter } from 'react-router-dom';
 import { HomeRounded, Telegram } from '@mui/icons-material';
 import jobInfo from '../../Utils/jobInfo';
 import CustomButton from '../Button/Button';
+import './Header.css';
 
 const Header = (props) => {
   const pathName = props?.location?.pathname;
@@ -23,7 +24,9 @@ const Header = (props) => {
           <HomeRounded/>
         </Navbar.Brand>
       </Nav.Link>
+
       <Navbar.Toggle />
+
       <Navbar.Collapse> 
         <Nav>
           <Nav.Link as={NavLink} to='/' className={pathName == '/' ? 'header_link_active' : 'header_link'}>
@@ -48,4 +51,4 @@ const Header = (props) => {
   )
 }
 
-export default Header
+export default Header;
