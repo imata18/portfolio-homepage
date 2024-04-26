@@ -35,7 +35,19 @@
     border-bottom-left-radius: inherit;
 }
 
+.header .header_left {
+    margin-right: auto;
+}
+
 .header .header_right{ 
+    padding: 10px;
     display: flex;
     align-items: center;
 }
+
+.header .header_right > a > .MuiSvgIcon-root {
+    font-size: 16px !important;
+    margin-right:12px;
+    color: black;
+}
+

@@ -28,7 +28,7 @@ const Header = (props) => {
       <Navbar.Toggle />
 
       <Navbar.Collapse> 
-        <Nav>
+        <Nav className='header_left'>
           <Nav.Link as={NavLink} to='/' className={pathName == '/' ? 'header_link_active' : 'header_link'}>
             Resume
           </Nav.Link>
@@ -38,13 +38,14 @@ const Header = (props) => {
           </Nav.Link>
         </Nav>
 
-        <div clasName="header_right">
+        <div className="header_right">
           {Object.keys(jobInfo.socials).map(key => (
             <a href={jobInfo.socials[key].link} target="_blank">
               {jobInfo.socials[key].icon}
+              
             </a>
           ))}
-          <CustomButton text={'Contact Me'} icon={<Telegram />} />
+          <CustomButton className='contact_me' text={'Contact Me'} icon={<Telegram />} />
         </div>
       </Navbar.Collapse>
     </Navbar>
