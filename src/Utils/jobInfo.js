@@ -16,17 +16,17 @@ export default {
         Github: {
             link: 'https://github.com/imata18',
             text: 'imata18',
-            icon: <GitHubIcon/>
+            icon: <GitHubIcon style={{ color: 'black' }}/>
         },
         Linkedin: {
             link: 'https://www.linkedin.com/in/ivan-mata-574608174/',
             text: 'ivan-mata-574608174',
-            icon: <LinkedInIcon/>
+            icon: <LinkedInIcon style={{ color: 'black' }}/>
         },
         Instagram: {
             link: 'https://www.instagram.com/piyoz18/',
             text: '@piyoz18',
-            icon: <InstagramIcon/>
+            icon: <InstagramIcon style={{ color: 'black' }}/>
         }
     }
 }
