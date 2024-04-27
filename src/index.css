@@ -6,7 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: #f4f4f4;
-  overflow: hidden;
+  overflow-x: hidden;
   background: url('./Assets/Images/mexican_website_bg.jpg');
 }
 
