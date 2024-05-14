@@ -42,12 +42,24 @@ export default {
         }, {
             title: 'Teaching Assistant',
             company: 'Boston University',
-            date: 'Oct. 2023 - Present',
-            description: '• Input and update tenant information in physical and digital filing systems \n• Create Google Scripts to automatize the creation of tenant and lease documents \n• Assist in inspecting apartments and creating reports for any maintenance jobs \n• Utilize Google Sheet equations to facilitate the updating of available, renewed, or sublet units'
+            date: 'Sep. 2022 - Dec. 2022',
+            description: '• Reviewed and graded the code in submitted applications, as well as, provided students with feedback \n• Regularly met with the professor to discuss student progress and address any concerns or questions they had about individual students’ performance \n• Aided in managing the course Piazza (learning management system) by posting updates and answering any questions posted by the students'
         }, {
-            title: 'Real Estate Management & Investment LLC',
-            date: 'Oct. 2023 - Present',
-            description: '• Input and update tenant information in physical and digital filing systems \n• Create Google Scripts to automatize the creation of tenant and lease documents \n• Assist in inspecting apartments and creating reports for any maintenance jobs \n• Utilize Google Sheet equations to facilitate the updating of available, renewed, or sublet units'
+            title: 'Internal Sales Assistant',
+            company: 'The Agency Texas',
+            date: 'May. 2019 - Aug. 2019',
+            description: '• Served as first point of contact for any customers inquiring into real estate sales comprising major markets including San Antonio, Austin, and Houston \n• Administered metadata from contact, ensuring accuracy in contact information and real estate budget for every inquiry \n• Increased customer efficiency by recommending alternative listing within customer parameters (location, interest rates, budget) \n• Kept constant contact with inquirers at every step of the process'
         }
-    ]
+    ],
+    // education: [
+    //     {
+    //         school: 'Boston University',
+    //         degree: 'Master of Science in Computer Science',
+    //         date: '2021 - 2023'
+    //     }, {
+    //         school: 'Boston University',
+    //         degree: 'Bachelor of Science in Linguistics and Computer Science',
+    //         date: '2017 - 2021'
+    //     }
+    // ]
 }

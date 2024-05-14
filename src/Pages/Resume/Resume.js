@@ -5,8 +5,11 @@ import { Typography } from '@mui/material';
 
 import './Resume.css'
 import jobInfo from '../../Utils/jobInfo'
+import educationInfo from '../../Utils/educationInfo';
 import CustomTimeline, { CustomTimelineSeparator } from '../../Components/Timeline/Timeline'
 import WorkIcon from '@mui/icons-material/Work';
+import SchoolIcon from '@mui/icons-material/School';
+import { TimelineContent, TimelineDot, TimelineSeparator , TimelineItem} from '@mui/lab';
 
 const Resume = () => {
   return (
@@ -30,14 +33,42 @@ const Resume = () => {
         <h6 className='section_title_text'>Resume</h6>
       </Grid>
       <Grid item xs={12}>
-        <Grid container>
+        <Grid container className='resume_timeline' >
           {/**Experience */}
-          <Grid item sm={12} md={6}></Grid>
+          <Grid item sm={12} md={6}>
             <CustomTimeline 
-            title="WorkExperience" 
-            icon={<WorkIcon/>}></CustomTimeline>
+            title="Work Experience" 
+            icon={<WorkIcon/>}>
+              {jobInfo.experiences.map(experience => (
+                <TimelineItem>
+                  <CustomTimelineSeparator className="separator_padding"/>
+                    <TimelineContent className='timeline_content'> 
+                      <Typography className='timeline_title'>{experience.title}</Typography>
+                      <Typography variant = 'body2' className='timeline_company'>{experience.company}</Typography>
+                      <Typography variant = 'caption' className='timeline_date'>{experience.date}</Typography>
+                      <Typography variant = 'body2' className='timeline_description'>{experience.description}</Typography>
+                    </TimelineContent>
+                </TimelineItem>
+              ))}
+            </CustomTimeline>
+          </Grid>
           {/**Education */}
-          <Grid item sm={12} md={6}></Grid>
+          <Grid item sm={12} md={6}>
+            <CustomTimeline 
+            title="Education" 
+            icon={<SchoolIcon/>}>
+              {educationInfo.educations.map(education => (
+                <TimelineItem>
+                  <CustomTimelineSeparator className="separator_padding"/>
+                    <TimelineContent className='timeline_content'> 
+                      <Typography className='timeline_title'>{education.school}</Typography>
+                      <Typography variant = 'body2' className='timeline_company'>{education.degree}</Typography>
+                      <Typography variant = 'caption' className='timeline_date'>{education.date}</Typography>
+                    </TimelineContent>
+                </TimelineItem>
+              ))}
+            </CustomTimeline>
+          </Grid>
         </Grid>
 
       </Grid>
