@@ -5,6 +5,8 @@ import { Typography } from '@mui/material';
 
 import './Resume.css'
 import jobInfo from '../../Utils/jobInfo'
+import CustomTimeline, { CustomTimelineSeparator } from '../../Components/Timeline/Timeline'
+import WorkIcon from '@mui/icons-material/Work';
 
 const Resume = () => {
   return (
@@ -23,7 +25,22 @@ const Resume = () => {
     </Grid>
 
     <Grid container className='section'>
-      
+      <Grid item className='section_title mb_30'>
+        <span></span>
+        <h6 className='section_title_text'>Resume</h6>
+      </Grid>
+      <Grid item xs={12}>
+        <Grid container>
+          {/**Experience */}
+          <Grid item sm={12} md={6}></Grid>
+            <CustomTimeline 
+            title="WorkExperience" 
+            icon={<WorkIcon/>}></CustomTimeline>
+          {/**Education */}
+          <Grid item sm={12} md={6}></Grid>
+        </Grid>
+
+      </Grid>
     </Grid>
 
     <Grid container className='section'>
