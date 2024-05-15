@@ -23,3 +23,32 @@
     color: gray;
     white-space: pre-line !important;
 }
+
+.skill {
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 0px 48px 0px rgba(4,6,4,0.08) !important;
+    min-height: 180px;
+    height: 100%;
+}
+
+.skill .skill_title {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.skill .skill_description {
+    display: flex;
+    align-items: center;
+    color: #989898;
+    font-weight: 400;
+    line-height: 22px;
+    /* white-space: pre-line !important; */
+}
+
+.skill .skill_description .timeline_dot {
+    border-color: var(--main-color) !important;
+    padding: 2px;
+    margin-right: 5px;
+}

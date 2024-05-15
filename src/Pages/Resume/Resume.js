@@ -6,10 +6,12 @@ import { Typography } from '@mui/material';
 import './Resume.css'
 import jobInfo from '../../Utils/jobInfo'
 import educationInfo from '../../Utils/educationInfo';
+import skills_services from '../../Utils/skills_services';
 import CustomTimeline, { CustomTimelineSeparator } from '../../Components/Timeline/Timeline'
 import WorkIcon from '@mui/icons-material/Work';
 import SchoolIcon from '@mui/icons-material/School';
 import { TimelineContent, TimelineDot, TimelineSeparator , TimelineItem} from '@mui/lab';
+import Paper from '@mui/material/Paper';
 
 const Resume = () => {
   return (
@@ -74,7 +76,29 @@ const Resume = () => {
       </Grid>
     </Grid>
 
-    <Grid container className='section'>
+    <Grid item className='section_title mb_30'>
+        <span></span>
+        <h6 className='section_title_text'>Skills</h6>
+    </Grid>
+    <Grid container 
+    spacing={3}
+    justify='space-between' 
+    className='section graybg pb_45'>
+      {skills_services.skills.map((skill) => (
+        <Grid item xs={12} sm={6} md={3}>
+          <Paper elevation = {0} className='skill'>
+            <Typography variant='h6' className='skill_title'>
+              {skill.title}
+            </Typography>
+            {skill.description.map((item) => (
+              <Typography variant='body2' className='skill_description'>
+                <TimelineDot variant='outlined' className='timeline_dot'/>
+                {item}
+              </Typography>
+            ))}
+          </Paper>
+        </Grid>
+      ))}
 
     </Grid>
     </ >
