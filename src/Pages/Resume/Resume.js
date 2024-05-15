@@ -17,6 +17,7 @@ const Resume = () => {
   return (
     <>
     
+    {/* About Me */}
     <Grid container className='section pb_45'>
       <Grid item className='section_title mb_30'>
         <span></span>
@@ -29,6 +30,7 @@ const Resume = () => {
       </Grid>
     </Grid>
 
+    {/* Education and Experience */}
     <Grid container className='section'>
       <Grid item className='section_title mb_30'>
         <span></span>
@@ -76,6 +78,7 @@ const Resume = () => {
       </Grid>
     </Grid>
 
+    {/* Skills */}
     <Grid item className='section_title mb_30'>
         <span></span>
         <h6 className='section_title_text'>Skills</h6>
@@ -101,6 +104,7 @@ const Resume = () => {
       ))}
 
     </Grid>
+
     </ >
   )
 }

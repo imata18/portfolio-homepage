@@ -7,6 +7,7 @@ import Header from "./Components/Header/Header";
 import Footer from "./Components/Footer/Footer";
 import Portfolio from "./Pages/Portfolio/Portfolio";
 import Resume from "./Pages/Resume/Resume";
+import Contact from "./Pages/Contact/Contact";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -23,6 +24,7 @@ function App() {
             <div className="main_content container_shadow">
               <Routes>
                 <Route path="/portfolio" element={<Portfolio />}></Route>
+                <Route path="/contact" element={<Contact />}></Route>
                 <Route path="/" element={<Resume />}></Route>
               </Routes>
             </div>
