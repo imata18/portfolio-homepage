@@ -10,4 +10,12 @@
 
 .input_field .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
     border-color: var(--main-color) !important;
-  }
+}
+
+.contact .btn_sendMessage {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+
+}
