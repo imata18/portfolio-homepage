@@ -19,3 +19,23 @@
     margin-top: 10px;
 
 }
+
+.contact_infoItem {
+    font-size: 14px;
+    color: #787878
+}
+
+.contact_infoItem > span {
+    color: black;
+    font-weight: 500;
+}
+
+.contact_socialLinks {
+    margin-top: 20px;
+}
+
+.contact_socialLink > a > .MuiSvgIcon-root {
+    font-size: 16px;
+    margin-right: 10px;
+    color: black;
+}
