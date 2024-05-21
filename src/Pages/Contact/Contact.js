@@ -100,6 +100,20 @@ const Contact = () => {
       </Grid>
 
       {/* Address - Google Map */}
+      <Grid container className="map">
+        <Grid item xs={12}>
+          <div className="map_container">
+            <iframe 
+            title="Boston Map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23591.783588272418!2d-71.11738608369444!3d42.34310010641215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e37a1fa648a9a7%3A0x7a62be935904a698!2sBoston%2C%20MA%2002115!5e0!3m2!1sen!2sus!4v1716312298219!5m2!1sen!2sus" 
+            width="100%"
+            height="450"
+            style={{ border: 0 }}
+            allowFullScreen=""
+            loading="lazy"/>
+          </div>
+        </Grid>
+      </Grid>
     </>
   );
 };

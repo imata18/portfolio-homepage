@@ -39,3 +39,8 @@
     margin-right: 10px;
     color: black;
 }
+
+.map_container {
+    margin-top: 20px;
+    width: 100%;
+}
