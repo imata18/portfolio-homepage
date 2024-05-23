@@ -37,14 +37,13 @@ const Portfolio = () => {
         <Tabs
           value={tabValue}
           indicatorColor="white"
-          className="custom_tabs"
-          onChange={(event, newValue) => setTabValue(newValue)}
-        >
+          className="customTabs"
+          onChange={(event, newValue) => setTabValue(newValue)}>
           <Tab
             label="All"
             value="All"
             className={
-              tabValue == "All" ? "customTabs_item_active" : "customTabs_item"
+              tabValue == "All" ? "customTabs_item active" : "customTabs_item"
             }
           />
 
@@ -54,8 +53,8 @@ const Portfolio = () => {
                 label={tag}
                 value={tag}
                 className={
-                  tabValue == "All"
-                    ? "customTabs_item_active"
+                  tabValue == tag
+                    ? "customTabs_item active"
                     : "customTabs_item"
                 }
               ></Tab>
@@ -79,7 +78,9 @@ const Portfolio = () => {
                         name={project.name}/>
                         <CardContent>
                           <Typography className='customCard_name'>{project.name}</Typography>
-                          <Typography className='customCard_caption'>{project.caption}</Typography>
+                          <Typography 
+                          variant='body2' 
+                          className='customCard_caption'>{project.caption}</Typography>
                         </CardContent>
                       </CardActionArea>
                     </Card>
@@ -91,17 +92,18 @@ const Portfolio = () => {
         </Grid>
       </Grid>
 
+      {/* Project Dialog */}
       <Dialog open={projectDialog} onClose={() => setProjectDialog(false)}>
       <DialogTitle onClose={() => setProjectDialog(false)}>
         {projectDialog.name}
         </DialogTitle>
-      <img src="" alt="" />
+      <img src="" alt="" className="projectDialog_image"/>
       <DialogContent>
-        {projectDialog.description}
+       <Typography className="projectDialog_description">{projectDialog.description}</Typography>
       </DialogContent>
-      <DialogActions>
+      <DialogActions className="projectDialog_actions">
         {projectDialog?.links?.map((link) => (
-          <a href={link.link} target="_blank">
+          <a href={link.link} target="_blank" className="projectDialog_icon">
             {link.icon}
           </a>
         ))}

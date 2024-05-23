@@ -1,0 +1,13 @@
+.customTabs .customTabs_item {
+    padding:0px;
+    min-width: 0px;
+    margin-right: 20px;
+    text-transform: inherit;
+    font-size: 14px;
+    font-weight: 400;
+    outline-width: 0px;
+}
+
+.customTabs .active {
+    color: var(--main-color) !important;
+}
