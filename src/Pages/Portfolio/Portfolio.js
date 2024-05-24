@@ -25,9 +25,9 @@ const Portfolio = () => {
   };
 
   return (
-    <Grid container className="section pb_45 pt_45">
+    <Grid container spacing={1} className="section pb_45 pt_45">
       {/* Title */}
-      <Grid item className="section_title mb_30">
+      <Grid item className="section_title mb_20">
         <span></span>
         <h6 className="section_title_text">Portfolio</h6>
       </Grid>
@@ -65,11 +65,11 @@ const Portfolio = () => {
 
       {/* Projects */}
       <Grid item xs={12}>
-        <Grid container spacing={2}>
+        <Grid container spacing={3}>
           {projects.projects.map((project) => (
             <>
               {tabValue == project.tag || tabValue == "All" ? (
-                <Grid item>
+                <Grid item xs={12} sm={6} md={4}>
                   <Grow in timeout={1000}>
                     <Card className='customCard' onClick={() => setProjectDialog(project)}>
                       <CardActionArea>
@@ -77,7 +77,7 @@ const Portfolio = () => {
                         image={project.image} 
                         name={project.name}/>
                         <CardContent>
-                          <Typography className='customCard_name'>{project.name}</Typography>
+                          <Typography variant='body2' className='customCard_name'>{project.name}</Typography>
                           <Typography 
                           variant='body2' 
                           className='customCard_caption'>{project.caption}</Typography>
@@ -93,11 +93,12 @@ const Portfolio = () => {
       </Grid>
 
       {/* Project Dialog */}
-      <Dialog open={projectDialog} onClose={() => setProjectDialog(false)}>
+      <Dialog open={projectDialog} onClose={() => setProjectDialog(false)} 
+      className='projectDialog'>
       <DialogTitle onClose={() => setProjectDialog(false)}>
         {projectDialog.name}
         </DialogTitle>
-      <img src="" alt="" className="projectDialog_image"/>
+      <img src={projectDialog.image} alt="" className="projectDialog_image"/>
       <DialogContent>
        <Typography className="projectDialog_description">{projectDialog.description}</Typography>
       </DialogContent>
