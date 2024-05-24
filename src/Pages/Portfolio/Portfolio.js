@@ -94,7 +94,8 @@ const Portfolio = () => {
 
       {/* Project Dialog */}
       <Dialog open={projectDialog} onClose={() => setProjectDialog(false)} 
-      className='projectDialog'>
+      className='projectDialog'
+      fullWidth>
       <DialogTitle onClose={() => setProjectDialog(false)}>
         {projectDialog.name}
         </DialogTitle>
