@@ -6,6 +6,7 @@ import TimelineItem from '@mui/lab/TimelineItem';
 import TimelineContent from "@mui/lab/TimelineContent";
 import CustomButton from "../Button/Button";
 import GetAppIcon from '@mui/icons-material/GetApp';
+import resume from "../../Assets/Documents/Resume_Ivan_Mata.pdf";
 
 
 import jobInfo from "../../Utils/jobInfo";
@@ -35,6 +36,13 @@ const CustomTimelineItem = ({title, text, link}) => {
 }
 
 const Profile = () => {
+  const handleDownloadResume = () => {
+    const link = document.createElement('a');
+    link.href = require("../../Assets/Documents/Resume_Ivan_Mata.pdf");
+    link.download = "Resume_Ivan_Mata.pdf";
+    link.click();
+  };
+
   return (
     <div className="profile containter_shadow">
       <div className="profile_name">
@@ -58,7 +66,8 @@ const Profile = () => {
         </CustomTimeline>
 
         <div className="button_ctner">
-            <CustomButton text={"Download Resume"}  icon={<GetAppIcon />}/>
+            <CustomButton text={"Download Resume"}  icon={<GetAppIcon />}
+              onClick={handleDownloadResume}/>
         </div>
       </div>
     </div>
