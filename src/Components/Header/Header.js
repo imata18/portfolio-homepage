@@ -49,7 +49,9 @@ const Header = (props) => {
               
             </a>
           ))}
-          <CustomButton className='contact_me' text={'Contact Me'} icon={<Telegram />} />
+          <a href="mailto:imata@bu.edu" className="contact_me_link">
+            <CustomButton text={'Contact Me'} icon={<Telegram />} />
+          </a>
         </div>
       </Navbar.Collapse>
     </Navbar>

@@ -5,7 +5,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 
 export default {
     name: 'Ivan Mata',
-    title: 'Recent MS Graduate',
+    title: 'Recent MS Graduate | Administrative Assistant',
 
     birthday: 'August 18th, 1999',
     email: 'imata@bu.edu',
