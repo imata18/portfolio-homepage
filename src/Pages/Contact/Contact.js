@@ -24,6 +24,7 @@ const Contact = () => {
                 <Grid item xs={12} md={6}>
                   <TextField
                     fullWidth
+                    required
                     className="input_field"
                     label="Name"
                     variant="standard"
@@ -32,6 +33,8 @@ const Contact = () => {
                 <Grid item xs={12} md={6}>
                   <TextField
                     fullWidth
+                    type="email"
+                    required
                     className="input_field"
                     label="Email"
                     variant="standard"
@@ -40,6 +43,7 @@ const Contact = () => {
                 <Grid item xs={12}>
                   <TextField
                     fullWidth
+                    required
                     className="input_field"
                     label="Message"
                     multiline
