@@ -1,7 +1,7 @@
 {
   "name": "portfolio-webpage",
   "version": "0.1.0",
-  "homepage": "https://imata18.github.io",
+  "homepage": "https://imata18.github.io/portfolio-webpage/",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.11.3",
