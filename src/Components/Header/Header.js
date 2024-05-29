@@ -29,7 +29,7 @@ const Header = (props) => {
 
       <Navbar.Collapse> 
         <Nav className='header_left'>
-          <Nav.Link as={NavLink} to='/' className={pathName == '/' ? 'header_link_active' : 'header_link'}>
+          <Nav.Link as={NavLink} to='/' className={pathName == '/portfolio-homepage' ? 'header_link_active' : 'header_link'}>
             Resume
           </Nav.Link>
 
