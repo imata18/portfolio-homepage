@@ -25,7 +25,7 @@ function App() {
               <Routes>
                 <Route path="/portfolio" element={<Portfolio />}></Route>
                 <Route path="/contact" element={<Contact />}></Route>
-                <Route path="/" element={<Resume />}></Route>
+                <Route path="/portfolio-homepage" element={<Resume />}></Route>
               </Routes>
             </div>
           </Router>
