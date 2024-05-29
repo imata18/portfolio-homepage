@@ -19,7 +19,7 @@ const Header = (props) => {
 
   return (
     <Navbar expand="lg" sticky='top' className='header'>
-      <Nav.Link as={NavLink} to='/portfolio-homepage'>
+      <Nav.Link as={NavLink} to='/portfolio-homepage/'>
         <Navbar.Brand className='header_home'>
           <HomeRounded/>
         </Navbar.Brand>
@@ -29,7 +29,7 @@ const Header = (props) => {
 
       <Navbar.Collapse> 
         <Nav className='header_left'>
-          <Nav.Link as={NavLink} to='/portfolio-homepage' className={pathName == '/portfolio-homepage' ? 'header_link_active' : 'header_link'}>
+          <Nav.Link as={NavLink} to='/portfolio-homepage/' className={pathName == '/portfolio-homepage/' ? 'header_link_active' : 'header_link'}>
             Resume
           </Nav.Link>
 
