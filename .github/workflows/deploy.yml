@@ -1,0 +1,56 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '20.5'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build project
+        run: npm run build # Ensure this matches your build script
+
+      - name: Deploy to gh-pages
+        if: success()
+        run: |
+          # Initialize a new git repository in the build directory
+          cd build
+          git init
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # Add and commit the build output
+          git add .
+          git commit -m "Deploy to GitHub Pages"
+
+          # Force push to the gh-pages branch
+          git push --force "https://${{ secrets.GITHUB_TOKEN }}@github.com/imata18/portfolio-homepage.git" master:gh-pages
+          
+      - name: Checkout main branch
+        run: git checkout main
+
+      - name: Push changes to main
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # Stage and commit all changes in the main branch
+          git add .
+          git commit -m "Update main branch"
+          
+          # Push changes to the main branch
+          git push "https://${{ secrets.GITHUB_TOKEN }}@github.com/imata18/portfolio-homepage.git" HEAD:main
