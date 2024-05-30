@@ -1,46 +1,46 @@
-
 /* Apply color to the underline after state (focused) */
 .input_field .MuiInput-underline:after {
-    border-bottom-color: var(--main-color) !important;
+  border-bottom-color: var(--main-color) !important;
 }
 
 .input_field .MuiFormLabel-root.Mui-focused {
-    color: var(--main-color) !important;
+  color: var(--main-color) !important;
 }
 
-.input_field .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
-    border-color: var(--main-color) !important;
+.input_field
+  .MuiOutlinedInput-root.Mui-focused
+  .MuiOutlinedInput-notchedOutline {
+  border-color: var(--main-color) !important;
 }
 
 .contact .btn_sendMessage {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
 }
 
 .contact_infoItem {
-    font-size: 14px;
-    color: #787878
+  font-size: 14px;
+  color: #787878;
 }
 
 .contact_infoItem > span {
-    color: black;
-    font-weight: 500;
+  color: black;
+  font-weight: 500;
 }
 
 .contact_socialLinks {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .contact_socialLink > a > .MuiSvgIcon-root {
-    font-size: 16px;
-    margin-right: 10px;
-    color: black;
+  font-size: 16px;
+  margin-right: 10px;
+  color: black;
 }
 
 .map_container {
-    margin-top: 20px;
-    width: 100%;
+  margin-top: 20px;
+  width: 100%;
 }
