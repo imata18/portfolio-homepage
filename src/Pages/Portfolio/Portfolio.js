@@ -20,9 +20,7 @@ const Portfolio = () => {
   const [tabValue, setTabValue] = useState("All");
   const [projectDialog, setProjectDialog] = useState(false);
 
-  const ProjectDialog = () => {
-    
-  };
+  const ProjectDialog = () => {};
 
   return (
     <Grid container spacing={1} className="section pb_45 pt_45">
@@ -38,7 +36,8 @@ const Portfolio = () => {
           value={tabValue}
           indicatorColor="white"
           className="customTabs"
-          onChange={(event, newValue) => setTabValue(newValue)}>
+          onChange={(event, newValue) => setTabValue(newValue)}
+        >
           <Tab
             label="All"
             value="All"
@@ -53,9 +52,7 @@ const Portfolio = () => {
                 label={tag}
                 value={tag}
                 className={
-                  tabValue == tag
-                    ? "customTabs_item active"
-                    : "customTabs_item"
+                  tabValue == tag ? "customTabs_item active" : "customTabs_item"
                 }
               ></Tab>
             )
@@ -71,16 +68,29 @@ const Portfolio = () => {
               {tabValue == project.tag || tabValue == "All" ? (
                 <Grid item xs={12} sm={6} md={4}>
                   <Grow in timeout={1000}>
-                    <Card className='customCard' onClick={() => setProjectDialog(project)}>
+                    <Card
+                      className="customCard"
+                      onClick={() => setProjectDialog(project)}
+                    >
                       <CardActionArea>
-                        <CardMedia className='customCard_image' 
-                        image={project.image} 
-                        name={project.name}/>
+                        <CardMedia
+                          className="customCard_image"
+                          image={project.image}
+                          name={project.name}
+                        />
                         <CardContent>
-                          <Typography variant='body2' className='customCard_name'>{project.name}</Typography>
-                          <Typography 
-                          variant='body2' 
-                          className='customCard_caption'>{project.caption}</Typography>
+                          <Typography
+                            variant="body2"
+                            className="customCard_name"
+                          >
+                            {project.name}
+                          </Typography>
+                          <Typography
+                            variant="body2"
+                            className="customCard_caption"
+                          >
+                            {project.caption}
+                          </Typography>
                         </CardContent>
                       </CardActionArea>
                     </Card>
@@ -93,25 +103,29 @@ const Portfolio = () => {
       </Grid>
 
       {/* Project Dialog */}
-      <Dialog open={projectDialog} onClose={() => setProjectDialog(false)} 
-      className='projectDialog'
-      fullWidth>
-      <DialogTitle onClose={() => setProjectDialog(false)}>
-        {projectDialog.name}
+      <Dialog
+        open={projectDialog}
+        onClose={() => setProjectDialog(false)}
+        className="projectDialog"
+        fullWidth
+      >
+        <DialogTitle onClose={() => setProjectDialog(false)}>
+          {projectDialog.name}
         </DialogTitle>
-      <img src={projectDialog.image} alt="" className="projectDialog_image"/>
-      <DialogContent>
-       <Typography className="projectDialog_description">{projectDialog.description}</Typography>
-      </DialogContent>
-      <DialogActions className="projectDialog_actions">
-        {projectDialog?.links?.map((link) => (
-          <a href={link.link} target="_blank" className="projectDialog_icon">
-            {link.icon}
-          </a>
-        ))}
-      </DialogActions>
-    </Dialog>
-
+        <img src={projectDialog.image} alt="" className="projectDialog_image" />
+        <DialogContent>
+          <Typography className="projectDialog_description">
+            {projectDialog.description}
+          </Typography>
+        </DialogContent>
+        <DialogActions className="projectDialog_actions">
+          {projectDialog?.links?.map((link) => (
+            <a href={link.link} target="_blank" className="projectDialog_icon">
+              {link.icon}
+            </a>
+          ))}
+        </DialogActions>
+      </Dialog>
     </Grid>
   );
 };
