@@ -19,7 +19,7 @@ const Header = (props) => {
 
   return (
     <Navbar expand="lg" sticky="top" className="header">
-      <Nav.Link as={NavLink} to="/portfolio-homepage">
+      <Nav.Link as={NavLink} to="/">
         <Navbar.Brand className="header_home">
           <HomeRounded />
         </Navbar.Brand>
