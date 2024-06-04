@@ -19,13 +19,14 @@ function App() {
           <Profile />
         </Grid>
         <Grid item xs>
-        <Router>
+        <Router basename="/portfolio-homepage">
           <Header />
             <div className="main_content container_shadow">
               <Routes>
+                <Route exact path="/" element={<Resume />}></Route>
                 <Route path="/portfolio" element={<Portfolio />}></Route>
                 <Route path="/contact" element={<Contact />}></Route>
-                <Route path="/portfolio-homepage/" element={<Resume />}></Route>
+                <Route path="*" element={<NotFound />}></Route>
               </Routes>
             </div>
           </Router>
