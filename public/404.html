@@ -4,10 +4,13 @@
     <script type="text/javascript">
       // Get the path from the URL
       var pathname = window.location.pathname;
-      // Construct the new URL
-      var newUrl = window.location.origin + pathname;
-      // Redirect to the new URL
-      window.location.replace(newUrl);
+      // Check if the path starts with /portfolio-project
+      if (!pathname.startsWith('/portfolio-homepage')) {
+        // Construct the new URL
+        var newUrl = window.location.origin + pathname;
+        // Redirect to the new URL
+        window.location.replace(newUrl);
+      }
     </script>
   </head>
   <body></body>
