@@ -1,7 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta http-equiv="refresh" content="0; URL='/public/index.html'" />
+    <script type="text/javascript">
+      // Get the path from the URL
+      var pathname = window.location.pathname;
+      // Construct the new URL
+      var newUrl = window.location.origin + "/portfolio-project" + pathname;
+      // Redirect to the new URL
+      window.location.replace(newUrl);
+    </script>
   </head>
   <body></body>
 </html>
