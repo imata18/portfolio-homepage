@@ -83,6 +83,18 @@ export default{
                     link: 'https://github.com/imata18/TransUnet-Segmentation'
                 }
             ]
+        }, {
+            tags: ['Python', 'HTML'],
+            name: 'Roadtrip Planner',
+            image: Java_template_image,
+            description: 'Collaborated with another student to create a web application that would allow users to plan a roadtrip.',
+            caption: 'A web application that allows users to plan a roadtrip',
+            links: [
+                {
+                    icon: <GithubIcon />,
+                    link: 'https://github.com/imata18/Roadtrip-Planner'
+                }
+            ]
         }
     ]
 }
