@@ -46,7 +46,7 @@ const Portfolio = () => {
             }
           />
 
-          {[...new Set(projects.projects.map((item) => item.tag))].map(
+          {[...new Set(projects.projects.flatMap((item) => item.tags))].map(
             (tag) => (
               <Tab
                 label={tag}
@@ -65,7 +65,7 @@ const Portfolio = () => {
         <Grid container spacing={3}>
           {projects.projects.map((project) => (
             <>
-              {tabValue == project.tag || tabValue == "All" ? (
+              {project.tags.includes(tabValue) || tabValue == "All" ? (
                 <Grid item xs={12} sm={6} md={4}>
                   <Grow in timeout={1000}>
                     <Card

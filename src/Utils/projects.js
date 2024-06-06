@@ -7,7 +7,7 @@ import GithubIcon from '@mui/icons-material/GitHub';
 export default{
     projects: [
         {
-            tag: 'React',
+            tags: ['React', 'JavaScript', 'CSS'],
             name: 'Portfolio Website',
             image: Website_screenshot,
             description: 'My portfolio website',
@@ -19,7 +19,7 @@ export default{
                 }
             ] 
         }, {
-            tag: 'Python',
+            tags: ['Python', 'NLP'],
             name: 'Gender Bias in LLMs',
             image: Gender_bias_screenshot,
             description: 'In this paper, my team and I extended the work \
@@ -38,7 +38,7 @@ export default{
                 }
             ]
         }, {
-            tag: 'Android',
+            tags: ['Android', 'Java', 'Firebase'],
             name: 'Meet4Sho',
             image: Meet4Sho_screenshot,
             description: 'Collaborated to create an Android app that would help people search for events, movies, etc., to chat and meet up \
@@ -56,7 +56,7 @@ export default{
                 }
             ]
         }, {
-            tag: 'Java',
+            tags: ['Java', 'SQL'],
             name: 'ATM/Bank Simulation',
             image: Java_template_image,
             description: 'Collaborated with a team of three students to develop a banking system for both managers and customers. \
