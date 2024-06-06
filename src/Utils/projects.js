@@ -2,6 +2,7 @@ import Website_screenshot from '../Assets/Images/Website_screenshot.png';
 import Gender_bias_screenshot from '../Assets/Images/Gender_bias_screenshot.png';
 import Meet4Sho_screenshot from '../Assets/Images/Meet4Sho_screenshot.png';
 import Java_template_image from '../Assets/Images/Java_template_image.png';
+import TransUnet_screenshot from '../Assets/Images/TransUnet_screenshot.png';
 import GithubIcon from '@mui/icons-material/GitHub';
 
 export default{
@@ -19,7 +20,7 @@ export default{
                 }
             ] 
         }, {
-            tags: ['Python', 'NLP'],
+            tags: ['Python', 'AI'],
             name: 'Gender Bias in LLMs',
             image: Gender_bias_screenshot,
             description: 'In this paper, my team and I extended the work \
@@ -67,6 +68,19 @@ export default{
                 {
                     icon: <GithubIcon />,
                     link: 'https://github.com/imata18/ATM_Banking'
+                }
+            ]
+        }, {
+            tags: ['Python', 'AI'],
+            name: 'TransUnet-Segmentation',
+            image: TransUnet_screenshot,
+            description: 'Collaborated with another student to train a TransUnet segmentation model on a dataset of images comprised of CT scans. \
+            The model would segment the health organs located near the target tumor so as to aid in the irradiation planning of lung and esophageal cancers.',
+            caption: 'A TransUnet segmentation model for irradiation planning',
+            links: [
+                {
+                    icon: <GithubIcon />,
+                    link: 'https://github.com/imata18/TransUnet-Segmentation'
                 }
             ]
         }
