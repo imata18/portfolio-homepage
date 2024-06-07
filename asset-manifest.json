@@ -1,19 +1,24 @@
 {
   "files": {
     "main.css": "/portfolio-homepage/static/css/main.b6a625d0.css",
-    "main.js": "/portfolio-homepage/static/js/main.eae074d6.js",
+    "main.js": "/portfolio-homepage/static/js/main.fd342211.js",
     "static/js/787.afc354b8.chunk.js": "/portfolio-homepage/static/js/787.afc354b8.chunk.js",
     "static/media/Portfolio_pic.jpg": "/portfolio-homepage/static/media/Portfolio_pic.112398d264c15e4cbcfe.jpg",
     "static/media/Website_screenshot.png": "/portfolio-homepage/static/media/Website_screenshot.122a16e5afab1b3e7e4d.png",
+    "static/media/TransUnet_screenshot.png": "/portfolio-homepage/static/media/TransUnet_screenshot.648095d734ceb77140b5.png",
+    "static/media/Gender_bias_screenshot.png": "/portfolio-homepage/static/media/Gender_bias_screenshot.2daf92b1a0cef7447f7e.png",
     "static/media/Resume_Ivan_Mata.pdf": "/portfolio-homepage/static/media/Resume_Ivan_Mata.d03ffbe98c6d27485d48.pdf",
+    "static/media/Meet4Sho_screenshot.png": "/portfolio-homepage/static/media/Meet4Sho_screenshot.ef772c6835cb009f538a.png",
     "static/media/mexican_website_white.jpg": "/portfolio-homepage/static/media/mexican_website_white.5a5d081ad7673555376a.jpg",
+    "static/media/Java_template_image.png": "/portfolio-homepage/static/media/Java_template_image.e497129653369b174e8e.png",
+    "static/media/RoadtripPlanner_screenshot.png": "/portfolio-homepage/static/media/RoadtripPlanner_screenshot.556393cc922d814664b5.png",
     "index.html": "/portfolio-homepage/index.html",
     "main.b6a625d0.css.map": "/portfolio-homepage/static/css/main.b6a625d0.css.map",
-    "main.eae074d6.js.map": "/portfolio-homepage/static/js/main.eae074d6.js.map",
+    "main.fd342211.js.map": "/portfolio-homepage/static/js/main.fd342211.js.map",
     "787.afc354b8.chunk.js.map": "/portfolio-homepage/static/js/787.afc354b8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b6a625d0.css",
-    "static/js/main.eae074d6.js"
+    "static/js/main.fd342211.js"
   ]
 }
