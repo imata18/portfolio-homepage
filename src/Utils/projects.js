@@ -3,6 +3,7 @@ import Gender_bias_screenshot from '../Assets/Images/Gender_bias_screenshot.png'
 import Meet4Sho_screenshot from '../Assets/Images/Meet4Sho_screenshot.png';
 import Java_template_image from '../Assets/Images/Java_template_image.png';
 import TransUnet_screenshot from '../Assets/Images/TransUnet_screenshot.png';
+import RoadtripPlanner_screenshot from '../Assets/Images/RoadtripPlanner_screenshot.png';
 import GithubIcon from '@mui/icons-material/GitHub';
 
 export default{
@@ -86,8 +87,10 @@ export default{
         }, {
             tags: ['Python', 'HTML'],
             name: 'Roadtrip Planner',
-            image: Java_template_image,
-            description: 'Collaborated with another student to create a web application that would allow users to plan a roadtrip.',
+            image: RoadtripPlanner_screenshot,
+            description: 'Collaborated with 2 other students to create a web application that would allow users to plan a roadtrip. \
+            The application would allow users to select their destination, departure date, and return date. \
+            We utilized MapQuest API to get the directions of the roadtrip and Yelp API to get the hotel suggestions.',
             caption: 'A web application that allows users to plan a roadtrip',
             links: [
                 {
