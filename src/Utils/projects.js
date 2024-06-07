@@ -88,7 +88,7 @@ export default{
             tags: ['Python', 'HTML'],
             name: 'Roadtrip Planner',
             image: RoadtripPlanner_screenshot,
-            description: 'Collaborated with 2 other students to create a web application that would allow users to plan a roadtrip. \
+            description: 'Collaborated with two other students to create a web application that would allow users to plan a roadtrip. \
             The application would allow users to select their destination, departure date, and return date. \
             We utilized MapQuest API to get the directions of the roadtrip and Yelp API to get the hotel suggestions.',
             caption: 'A web application that allows users to plan a roadtrip',
