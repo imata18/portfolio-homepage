@@ -85,7 +85,7 @@ export default{
                 }
             ]
         }, {
-            tags: ['Python', 'HTML'],
+            tags: ['Python', 'HTML', 'SQL'],
             name: 'Roadtrip Planner',
             image: RoadtripPlanner_screenshot,
             description: 'Collaborated with two other students to create a web application that would allow users to plan a roadtrip. \
