@@ -68,6 +68,7 @@ const Resume = () => {
                       <Typography className='timeline_title'>{education.school}</Typography>
                       <Typography variant = 'body2' className='timeline_company'>{education.degree}</Typography>
                       <Typography variant = 'caption' className='timeline_date'>{education.date}</Typography>
+                      <Typography variant = 'body2' className='timeline_description'>{education.relevantCourses}</Typography>
                     </TimelineContent>
                 </TimelineItem>
               ))}
